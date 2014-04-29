@@ -121,13 +121,13 @@ T parse_num_as(std::string numstr)
 template<>
 float parse_num_as<float>(std::string numstr)
 {
-  return std::strtof(numstr.c_str(), nullptr);
+  return std::stof(numstr, nullptr);
 }
 
 template<>
 double parse_num_as<double>(std::string numstr)
 {
-  return std::strtod(numstr.c_str(), nullptr);
+  return std::stod(numstr, nullptr);
 }
 
 
